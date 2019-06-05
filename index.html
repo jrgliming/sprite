@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        .sprite1{
-            width: 18px;
-            height: 24px;
-            background: url(./images/jds.png) no-repeat 0 -100px;
-        }
-        .sprite2{
-            width: 18px;
-            height: 24px;
-            background: url(./images/jds.png) no-repeat 0 -70px;  
-        }
+       .box{
+           width: 500px;
+           height: 300px;
+           border: 1px solid red;
+           text-align: center;
+       }
+       .box::before{
+           content: '';
+           height: 100%;
+           vertical-align: middle;
+           display: inline-block;
+       }
+       img{
+           vertical-align: middle;
+           /* background: rgba(0,0,0,0.5); */
+     
+       }
     </style>
 </head>
 <body>
-    <div class="sprite1"></div>
-    <div class="sprite2"></div>
+    <div class="box">
+        <img src="./images/go.png" title="谷歌图片">
+    </div>
 </body>
 </html>
